@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <AutoCompleteTextView
+        android:id="@+id/editText"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_x="0dp"
+        android:layout_y="3dp"
+        android:completionThreshold="1"
+        android:ems="10"
+        android:hint="输入快递单号"
+        android:inputType="textPersonName"
+        android:maxLength="16"
+        android:scrollbars="vertical"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:imeOptions="actionSearch"
+        android:maxLines="1" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="67dp"
+        android:layout_height="62dp"
+        android:layout_x="215dp"
+        android:layout_y="6dp"
+        android:background="#00000000"
+        android:elevation="1dp"
+        android:scaleType="centerInside"
+        android:onClick="OnCamera"
+        app:srcCompat="@drawable/camera"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_x="296dp"
+        android:layout_y="12dp"
+        android:text="查询"
+        android:onClick="OnClick"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_x="1dp"
+            android:layout_y="84dp"
+            android:text="" />
+    </LinearLayout>
+</LinearLayout>
